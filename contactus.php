@@ -1,3 +1,6 @@
+<?php
+$currentPage = 'contactus.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 

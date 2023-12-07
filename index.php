@@ -1,3 +1,7 @@
+<?php
+$currentPage = 'index.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,10 +34,10 @@
       website. We look forward to welcoming talented students to our vibrant academic community.</p>
 
     <hr>
-    <a href="https://www.google.com"><button type="button" class="btn btn-primary">Admission</button></a>
-    <button type="button" class="btn btn-warning">Pay Fees</button>
-    <button type="button" class="btn btn-success">Student Details</button>
-    <button type="button" class="btn btn-info">Contact us</button>
+    <a href="admit.php"><button type="button" class="btn btn-primary">Admission</button></a>
+    <a href="feepayment.php"><button type="button" class="btn btn-warning">Pay Fees</button></a>
+    <a href="studentdetails.php"><button type="button" class="btn btn-success">Student Details</button></a>
+    <a href="contactus.php"><button type="button" class="btn btn-info">Contact us</button></a>
 
 
   </div>

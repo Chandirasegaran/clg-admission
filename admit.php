@@ -1,3 +1,6 @@
+<?php
+$currentPage = 'admit.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 

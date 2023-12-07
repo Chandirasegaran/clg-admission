@@ -1,3 +1,7 @@
+<?php
+$currentPage = 'feepayment.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

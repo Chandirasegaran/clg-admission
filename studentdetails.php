@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+$currentPage = 'studentdetails.php';
+?>
+
 <html lang="en">
 
 <head>
