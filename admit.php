@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>Admit Students</h1>
 
         <!-- Admission Form -->
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <form id="admissionForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" name="name" required>
@@ -72,12 +72,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" name="email" required>
+                <input type="email" class="form-control" name="email" id="email" required>
             </div>
 
             <div class="form-group">
                 <label for="phone_number">Phone Number:</label>
-                <input type="tel" class="form-control" name="phone_number" required>
+                <input type="tel" class="form-control" name="phone_number" id="phone_number" required>
             </div>
 
             <div class="form-group">
@@ -108,6 +108,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
 
+    <!-- Include the JavaScript file -->
+    <script src="./assets/app.js"></script>
 </body>
 
 </html>

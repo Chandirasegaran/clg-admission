@@ -39,7 +39,6 @@ $currentPage = 'studentdetails.php';
             <th>Date of Birth</th>
             <th>Address</th>
             <th>Course</th>
-            <th>Country</th>
             <th>Fee Payment</th>
             <th>Due Date</th>
           </tr>
@@ -54,7 +53,6 @@ $currentPage = 'studentdetails.php';
               <td><?php echo isset($row['date_of_birth']) ? $row['date_of_birth'] : ''; ?></td>
               <td><?php echo isset($row['address']) ? $row['address'] : ''; ?></td>
               <td><?php echo isset($row['course']) ? $row['course'] : ''; ?></td>
-              <td><?php echo isset($row['country']) ? $row['country'] : ''; ?></td>
               <td><?php echo isset($row['feepayment']) ? ($row['feepayment'] ? 'Paid' : 'Not Paid') : ''; ?></td>
               <td><?php echo isset($row['due_date']) ? $row['due_date'] : ''; ?></td>
             </tr>

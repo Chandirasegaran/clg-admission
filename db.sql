@@ -44,3 +44,7 @@ SELECT *FROM STUDENTs;
 SELECT *FROM TRANSACTION;
 
 SELECT *FROM contact_submissions;
+
+UPDATE students
+SET due_date = '2023-12-04'
+WHERE phone_number = 1234567891;

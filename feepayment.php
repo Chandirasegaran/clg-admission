@@ -41,6 +41,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             default:
                 $courseFee = 0;
         }
+
+        // Add fine to the total course fee
+        $totalAmount = $courseFee + $fineAmount;
     }
 }
 ?>
@@ -83,10 +86,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <?php if (!$student['feepayment']): ?>
                     <p><strong>Due Date:</strong> <?php echo $student['due_date']; ?></p>
                     <p><strong>Course Fee:</strong> <?php echo $courseFee; ?> Rs</p>
+                    <p><strong>Fine Amount:</strong> <?php echo $fineAmount; ?> Rs</p>
+                    <p><strong>Total Amount:</strong> <?php echo $totalAmount; ?> Rs</p>
 
                     <form method="post" action="payfees.php">
                         <input type="hidden" name="phone_number" value="<?php echo $phoneNumber; ?>">
-                        <input type="hidden" name="course_fee" value="<?php echo $courseFee; ?>">
+                        <input type="hidden" name="course_fee" value="<?php echo $totalAmount; ?>">
                         <button type="submit" class="btn btn-primary">Pay Fees</button>
                     </form>
                 <?php endif; ?>
